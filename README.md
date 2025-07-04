@@ -1,50 +1,105 @@
-# Welcome to your Expo app 👋
+# 🎸 BeatMates: Sua Companhia para Shows e Festivais 🤘
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![BeatMates Logo Placeholder](https://via.placeholder.com/400x150/6a5acd/FFFFFF?text=BeatMates+Logo)
 
-## Get started
+## 🌟 Visão Geral do Projeto
 
-1. Install dependencies
+O **BeatMates** é um aplicativo móvel inovador, inspirado no formato de "match" do Tinder, mas com um foco exclusivo: conectar pessoas através de seus interesses musicais em comum, shows, festivais e artistas favoritos. A ideia principal é ajudar amantes da música que vão a eventos sozinhos a encontrarem companhia, ou para aqueles que deixam de ir por falta de alguém para acompanhá-los.
 
-   ```bash
-   npm install
-   ```
+Já tive a experiência de ir a muitos shows sozinho e conhecer pessoas incríveis na mesma situação. Também vi muitos amigos que deixaram de ir a eventos por não ter companhia. O BeatMates surge para resolver essa dor, proporcionando um ambiente seguro e divertido para encontrar "parceiros de show" e criar novas amizades baseadas em paixões musicais compartilhadas.
 
-2. Start the app
+## ✨ Funcionalidades Principais (Até o Momento)
 
-   ```bash
-   npx expo start
-   ```
+Estamos construindo o aplicativo passo a passo, e aqui estão as funcionalidades já implementadas ou em desenvolvimento:
 
-In the output, you'll find options to open the app in a
+### ✅ Fluxo de Criação de Perfil (Completo!)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+O usuário passa por um processo guiado para construir seu perfil musical:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* **Informações Básicas:** Coleta de nome, idade, gênero e localização.
+* **Estilos Musicais Preferidos:** Seleção interativa de gêneros musicais favoritos.
+* **Artistas Favoritos:** Busca e seleção de 5 ou mais artistas que o usuário mais gosta.
+* **Artistas que Sonha em Ver ao Vivo:** Busca e seleção de artistas que o usuário adoraria ver em shows.
+* **Festivais Preferidos:** Busca e seleção de festivais que o usuário gosta ou deseja ir.
+* **Sua "Vibe" em Shows/Eventos:** Seleção de como o usuário gosta de aproveitar eventos musicais (ex: "ir pra galera", "curtir mais de boa", "descobrir bandas novas").
 
-## Get a fresh project
+### 🎶 Feed de Eventos (Mockado)
 
-When you're ready, run:
+* Tela inicial do aplicativo exibindo um feed de eventos (shows, festivais) com dados de exemplo.
+* Layout de cards para cada evento, mostrando nome, artista, data, local e gênero.
+* **(Próximos Passos):** Personalização do feed com base nos interesses do usuário e integração com dados reais.
 
-```bash
-npm run reset-project
-```
+## 🚀 Próximos Passos (Roadmap)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Nosso foco agora é levar o BeatMates para o próximo nível, implementando:
 
-## Learn more
+1.  **Integração com Firebase:**
+    * Configuração do projeto Firebase.
+    * **Autenticação de Usuários:** Implementar login e cadastro reais (e-mail/senha, Google).
+    * **Armazenamento de Dados (Firestore):** Salvar os perfis musicais dos usuários no banco de dados.
+2.  **Lógica de Match:**
+    * Desenvolvimento do algoritmo para sugerir matches com base nos interesses musicais e eventos em comum.
+    * Implementação da interface de "swipe" (curtir/passar).
+3.  **Chat:**
+    * Funcionalidade de chat entre usuários que deram "match".
+    * Recursos de segurança (aceitação de chat, bloqueio).
+4.  **Recursos de Segurança e Denúncias:**
+    * Funcionalidades de denúncia e bloqueio de usuários.
+    * Diretrizes de segurança visíveis no app.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🛠️ Tecnologias Utilizadas
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* **Frontend Mobile:** [React Native](https://reactnative.dev/) (com [Expo](https://expo.dev/))
+* **Backend & Banco de Dados:** [Firebase](https://firebase.google.com/) (Firestore, Authentication, Cloud Functions)
+* **Navegação:** [Expo Router](https://expo.github.io/router/)
+* **Linguagem:** [TypeScript](https://www.typescriptlang.org/) (para um código mais robusto e tipado)
+* **Gerenciamento de Pacotes:** `npm` ou `Yarn`
 
-## Join the community
+## 💻 Como Rodar o Projeto (Ambiente de Desenvolvimento)
 
-Join our community of developers creating universal apps.
+Para configurar e rodar o projeto em sua máquina:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1.  **Pré-requisitos:**
+    * Node.js (versão LTS recomendada)
+    * npm (já vem com Node.js) ou Yarn
+    * Expo CLI (`npm install -g expo-cli`)
+    * Aplicativo Expo Go no seu celular (Android/iOS) ou um emulador
+    * Visual Studio Code (ou seu editor de código preferido)
+
+2.  **Clonar o Repositório:**
+    ```bash
+    git clone [https://github.com/gabrielfelip/BeatMates.git](https://github.com/gabrielfelip/BeatMates.git) 
+    cd BeatMates
+    ```
+
+3.  **Instalar Dependências:**
+    ```bash
+    npm install # ou yarn install
+    ```
+
+4.  **Iniciar o Servidor de Desenvolvimento:**
+    ```bash
+    npx expo start
+    ```
+    Isso abrirá uma aba no seu navegador com um QR Code. Escaneie-o com o app Expo Go no seu celular para ver o aplicativo em tempo real.
+
+5.  **Limpar Cache (em caso de problemas):**
+    ```bash
+    npm cache clean --force
+    # No Windows: rmdir /s /q node_modules & rmdir /s /q .expo
+    # No Linux/macOS: rm -rf node_modules .expo
+    npm install
+    npx expo start --clear
+    ```
+
+---
+
+**Status do Projeto: 🚧 Em Construção - Não Finalizado 🚧**
+
+---
+
+## 📄 Licença
+
+[MIT License](LICENSE) (Ou a licença que você preferir)
+
+---
