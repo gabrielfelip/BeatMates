@@ -94,12 +94,9 @@ Para configurar e rodar o projeto em sua máquina:
 
 ---
 
-**Status do Projeto: 🚧 Em Construção - Não Finalizado 🚧**
+**Status do Projeto: 🚧 Em Construção**
 
----
 
-## 📄 Licença
 
-[MIT License](LICENSE) (Ou a licença que você preferir)
 
----
+
